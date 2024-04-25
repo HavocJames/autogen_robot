@@ -1,4 +1,13 @@
-# autogen_robot
+# Autogen robot
+![robot](https://github.com/HavocJames/autogen_robot/assets/124689464/185aaeb8-255b-40e6-ba8a-e9f9b05bc095)
+
+![conversation](https://github.com/HavocJames/autogen_robot/assets/124689464/4fe7be24-5c97-4943-97ae-5c77344b7084)
+
+![rag](https://github.com/HavocJames/autogen_robot/assets/124689464/643a6116-ca80-48a3-8841-d4d78d0e7ea5)
+
+![action](https://github.com/HavocJames/autogen_robot/assets/124689464/4bab2f77-2912-4575-ba32-f46b226589a4)
+
+
 a robot that is powered by large language models and autogen as well as langchain tools
 (it should be noted that  the  robot is controlled through the function act where the it sends strings of command to the microcontroller where the action is enabled )
 

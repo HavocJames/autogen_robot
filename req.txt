@@ -1,0 +1,9 @@
+pyautogen
+langchain
+langchain-community
+googlesearch-python
+vosk
+pyserial
+pyttsx3
+pyaudio
+pypdf

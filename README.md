@@ -1,16 +1,33 @@
 # Autogen robot
 ![robot](https://github.com/HavocJames/autogen_robot/assets/124689464/185aaeb8-255b-40e6-ba8a-e9f9b05bc095)
+a robot that is powered by large language models and autogen as well as langchain tools
 
 ![conversation](https://github.com/HavocJames/autogen_robot/assets/124689464/4fe7be24-5c97-4943-97ae-5c77344b7084)
+Conversation with the bot
+
 
 ![rag](https://github.com/HavocJames/autogen_robot/assets/124689464/643a6116-ca80-48a3-8841-d4d78d0e7ea5)
+Conversation with data retrieval
+
 
 ![action](https://github.com/HavocJames/autogen_robot/assets/124689464/4bab2f77-2912-4575-ba32-f46b226589a4)
+Conversation with action
 
-
-a robot that is powered by large language models and autogen as well as langchain tools
-# It should be noted that the robot is controlled through an agent named actagent using the function act in the code where it sends a string command to the microcontroller where the action is executed 
-# (Python code -> Serial -> Microcontroller -> c++ code -> action) 
+# setup 
+### step 1
+create a folder where you want the code to be
+```
+git clone 
+```
+### step 2
+create a virtual environment with Python 3.10.14
+```
+pip install python3.10.14
+```
+``` 
+pip install r- req.txt
+```
+# It should be noted that the robot is controlled through an agent named actagent using the function act in the code where it sends a string command to the microcontroller where the action is executed (Python code -> Serial -> Microcontroller -> c++ code -> action) 
 
 # ABSTRACT 
 LLM-based Humanoid Robot represents a pioneering exploration into the integration of Large Language Models (LLMs) within humanoid robotics, aiming to revolutionize human-robot interaction.
@@ -80,8 +97,7 @@ Vosk and PYTTSX3 are integral components responsible for facilitating seamless v
 Vosk specializes in capturing and processing voice commands, employing advanced algorithms to accurately convert spoken words into text format, enabling the robot to comprehend user inputs effectively. 
 Complementing Vosk, PYTTSX3 plays a crucial role in generating speech responses from text, utilizing the Espeak engine to convert textual outputs into audible responses. 
 Together, these tools create a bidirectional communication channel, allowing users to interact with the robot through spoken commands while enabling the robot to respond audibly, enhancing the overall user experience and enabling more intuitive human-robot interaction.
-### Hash robot: 
-<https://github.com/hashrobotics-hr/hash_humanoid_robot_v3>
+### [Hash robot:](https://github.com/hashrobotics-hr/hash_humanoid_robot_v3)
 This component provides the robot with versatile and precise physical guidance similar to human movements, enhancing its capabilities in interacting with the physical world.
 The Hash robot component serves as the essential motor control system for the humanoid robot, enabling it to perform tasks with versatility and precision akin to human movements. 
 Through the orchestration of motors and actuators within the robot's joints and limbs, Hash robot translates digital commands into physical actions.

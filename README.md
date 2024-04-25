@@ -49,10 +49,10 @@ Download the ```vosk``` model that is to your preference to the folder<br>
 Replace the vosk model in the code with the downloaded model name <be>
 ### Step 7
 Upload the ```arduino_2560_code``` to the robot
-### Step 7
+### Step 8
 Connect to the microcontroller using a cable make sure to set the baudrate to ```115200```<be>
 It should be noted that the robot is controlled through an agent named actagent using the function act in the code where it sends a string command to the microcontroller where the action is executed (Python code -> Serial -> Microcontroller -> c++ code -> action) 
-### Step 7
+### Step 9
 run the code
 ```
 python autogen_robot

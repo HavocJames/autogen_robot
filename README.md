@@ -13,21 +13,51 @@ Conversation with data retrieval
 ![action](https://github.com/HavocJames/autogen_robot/assets/124689464/4bab2f77-2912-4575-ba32-f46b226589a4)
 Conversation with action
 
-# setup 
-### step 1
-create a folder where you want the code to be
+# Setup 
+### Step 1
+Create a folder where you want to host the code
+### Step 2
+Create a virtual environment with Python 3.10.14 
+Change {name} to your preference
 ```
-git clone 
+python -m venv {name} --python=python3.10.14
 ```
-### step 2
-create a virtual environment with Python 3.10.14
+To activate the environment
 ```
-pip install python3.10.14
+source my_env/bin/activate
 ```
+To deactivate the environment
+```
+deactivate
+```
+### Step 3
+clone the repository to the folder
+```
+git clone https://github.com/HavocJames/autogen_robot.git
+```
+### Step 4
+install the required packages
 ``` 
 pip install r- req.txt
 ```
-# It should be noted that the robot is controlled through an agent named actagent using the function act in the code where it sends a string command to the microcontroller where the action is executed (Python code -> Serial -> Microcontroller -> c++ code -> action) 
+### Step 5
+Add the PDF file for retrieval to the folder as ```data.pdf``` <br>
+or <br>
+Replace the ```data.pdf``` in the code with the name of your PDF <br>
+### Step 6
+Download the ```vosk``` model that is to your preference to the folder<br>
+Replace the vosk model in the code with the downloaded model name <be>
+### Step 7
+Connect to the microcontroller using a cable make sure to set the baudrate to ```115200```<be>
+It should be noted that the robot is controlled through an agent named actagent using the function act in the code where it sends a string command to the microcontroller where the action is executed (Python code -> Serial -> Microcontroller -> c++ code -> action) 
+### Step 7
+run the code
+```
+python autogen_robot
+```
+When running the code for the first time embedding models will be downloaded and a new folder will be created called ```CacheBackedEmbeddings``` where embeddings of the PDF will be stored so that every time it doesn't need to create embeddings <be>
+If a new pdf is added then the delete ```CacheBackedEmbeddings``` folder and run the code <br>
+once the initialization message is given out you can engage with the bot
 
 # ABSTRACT 
 LLM-based Humanoid Robot represents a pioneering exploration into the integration of Large Language Models (LLMs) within humanoid robotics, aiming to revolutionize human-robot interaction.

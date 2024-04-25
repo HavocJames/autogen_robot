@@ -29,19 +29,19 @@ The LLM serves as the core knowledge base, accessed through an API (Application 
 The RAG Agent reclaims and augments information from the local database using the LLM, while the Action Agent executes predefined tasks. 
 The Controller orchestrates the hardware actions, and the Speaker generates synthesized speech based on Agent Manager Instructions, completing the interaction loop.
 The functions of each block are given below:
-### Microphone and Speaker:
-The microphone captures the speech or audio signal from the user. The speaker generates speech, likely based on the output from the agentmanager.
-### Voice Recognition: 
+#### Microphone and Speaker:
+The microphone captures the speech or audio signal from the user. The speaker generates speech, likely based on the output from the agent manager.
+#### Voice Recognition: 
 This module converts the captured audio signal from the microphone into text using the VOSK Automatic Speech Recognition Model which is designed to be lightweight, efficient, and accurate.
-### LLM (Large Language Model):
+#### LLM (Large Language Model):
 The heart of the system lies in the LLM, which serves as the expertise base and language processing engine. The locally hosted model is called through API (Application Programming Interface) to be used for the agent’s interaction. The agent uses the resources provided by LLM to do its appropriate task.
-### Agent Manager: 
+#### Agent Manager: 
 This component directs the recognized text to the appropriate agent and allocates the agent to the local LLM. Agent manager also enable agents to communicate with each other.
-### LLM Chain:
+#### LLM Chain:
 An appropriate response is given to the user’s question which is present in the knowledge base of the LLM.
-### RAG Agent: 
+#### RAG Agent: 
 Retrieval Augmentation Generation Agent. It’s an agent trained to retrieve information from the local database, augment it with additional information and then use an LLM to generate a response.
-### Agent and Action Set: 
-An agent can refer to a software program that is designed to carry out a specific task or set of tasks. In the context of this diagram, the agent is likely to fulfill the user's request using the results from the LLM. Action Set defines the set of actions that the robot can take and perform.
-### Controller:
+#### Agent and Action Set: 
+An agent can refer to a software program that is designed to carry out a specific task or set of tasks. In the context of this diagram, the agent is likely to fulfil the user's request using the results from the LLM. Action Set defines the set of actions that the robot can take and perform.
+#### Controller:
 It controls the hardware of the robot and does the actions told by the action agent from the action set.

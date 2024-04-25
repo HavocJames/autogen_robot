@@ -9,7 +9,7 @@
 
 
 a robot that is powered by large language models and autogen as well as langchain tools
-(it should be noted that  the  robot is controlled through the function act where the it sends strings of command to the microcontroller where the action is enabled )
+# It should be noted that the  robot is controlled through the function act which is in the code managed by the agent act where the it sends string command to the microcontroller where the action is executed (Python code -> Serial -> Microcontroller -> c++ code -> action) 
 
 # ABSTRACT 
 LLM-based Humanoid Robot represents a pioneering exploration into the integration of Large Language Models (LLMs) within humanoid robotics, aiming to revolutionize human-robot interaction.

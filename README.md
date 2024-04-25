@@ -96,11 +96,11 @@ Moreover, the synergy between speech recognition and synthesis technologies faci
 Hence allows users to communicate with robots using speech, and is then accurately transcribed into text, processed, and responded to in real-time, enhancing the overall user experience.
 The incorporation of retrieval augmented generation (RAG) and Autogen mechanisms further upgrade interaction capabilities. RAG enables robots to retrieve and augment information from local databases which improves the relevance and accuracy of responses provided to user queries. 
 Autogen, on the other hand, enables robots to autonomously generate responses based on contextual understanding, expanding the range of significant tasks they can perform.
-#### Edge AI:
+### Edge AI:
 Edge AI refers to the deployment of artificial intelligence algorithms and models directly on edge devices, such as robots, rather than relying solely on cloud-based processing. 
 Here the system described likely leverages Edge AI for real-time processing of speech recognition and synthesis on the 21 DOF humanoid robot, permitting efficient and responsive interaction with humans without constant reliance on external servers.
 Applications could include real-time language understanding and generation during human-robot interactions at the edge, improving efficiency and reducing remission.
-#### Reception:
+### Reception:
 Humanoid robots equipped with speech recognition and synthesis capabilities can serve as interactive receptionists. 
 They can greet visitors, provide information about the premises, assist with check-ins, provide help during stays, and answer frequently asked questions. 
 The locally hosted LLM enables the robot to understand and respond to various queries naturally and conversationally, enhancing the reception experience for guests but also ensuring data privacy by processing information locally.
